@@ -1,0 +1,16 @@
+START
+    evenCount = 0
+    oddCount = 0
+    loop = 1
+    WHILE loop <= 10 DO
+        num = RANDOM(10, 100)
+        IF num MOD 2 == 0 THEN
+            evenCount = evenCount + 1
+        ELSE
+            oddCount = oddCount + 1
+        END IF
+        loop = loop + 1
+    END WHILE
+    PRINT "Even count: ", evenCount
+    PRINT "Odd count: ", oddCount
+END

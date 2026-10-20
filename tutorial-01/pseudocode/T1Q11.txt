@@ -1,0 +1,16 @@
+START
+    CREATE ARRAY numbers[5]
+    FOR i = 1 TO 5 DO
+        numbers[i] = RANDOM()
+    END FOR
+    
+    FOR i = 1 TO 5 DO
+        FOR j = 1 TO 4 DO
+            IF numbers[j] < numbers[j + 1] THEN
+                SWAP numbers[j], numbers[j + 1]
+            END IF
+        END FOR
+    END FOR
+    
+    PRINT numbers
+END

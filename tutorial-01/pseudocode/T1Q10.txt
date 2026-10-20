@@ -1,0 +1,12 @@
+START
+    READ studentList
+    femaleCount = 0
+    i = 1
+    WHILE i <= 100 DO
+        IF studentList[i].gender == "Female" THEN
+            femaleCount = femaleCount + 1
+        END IF
+        i = i + 1
+    END WHILE
+    PRINT "Number of female students: ", femaleCount
+END

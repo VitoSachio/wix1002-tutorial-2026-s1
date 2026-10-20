@@ -1,0 +1,11 @@
+START
+    PLAYER1 = random(1,6)
+    PLAYER2 = random(1,6)
+    if PLAYER1 > PLAYER2 then
+        print ("PLAYER 1 Wins")
+    else if PLAYER2 > PLAYER1
+        print ("PLAYER 2 Wins")
+    else 
+        print ("Draw")
+    end if
+END

@@ -1,0 +1,14 @@
+START
+    target = RANDOM(1, 100)
+    guess = 0
+    WHILE guess != target DO
+        READ guess
+        IF guess < target THEN
+            PRINT "Higher! Try again."
+        ELSE IF guess > target THEN
+            PRINT "Lower! Try again."
+        ELSE
+            PRINT "Correct!"
+        END IF
+    END WHILE
+END

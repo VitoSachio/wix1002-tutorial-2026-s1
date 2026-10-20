@@ -1,0 +1,8 @@
+START
+    number = random
+    IF num > 50
+        print "number is greater than 50"
+    ELSE num <=50 
+        print "number is 50 or less"
+    END IF
+END

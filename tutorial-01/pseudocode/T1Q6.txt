@@ -1,0 +1,12 @@
+START
+    min = MAX_VALUE
+    loop = 1
+    WHILE loop <= 10 DO
+        num = random ()
+        if num < min THEN
+            min = num
+        END if
+        loop = loop + 1
+    END WHILE
+    Print min
+END

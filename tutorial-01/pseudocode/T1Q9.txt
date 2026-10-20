@@ -1,0 +1,11 @@
+START
+    READ webpageText, keyword
+    count = 0
+    WHILE webpageText HAS MORE WORDS DO
+        word = READ NEXT WORD FROM webpageText
+        IF word == keyword THEN
+            count = count + 1
+        END IF
+    END WHILE
+    PRINT "Keyword frequency: ", count
+END

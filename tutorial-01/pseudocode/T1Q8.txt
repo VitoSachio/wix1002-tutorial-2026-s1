@@ -1,0 +1,14 @@
+START
+    READ sentence
+    uCount = 0
+    mCount = 0
+    FOR EACH char IN sentence DO
+        IF char == 'U' OR char == 'u' THEN
+            uCount = uCount + 1
+        ELSE IF char == 'M' OR char == 'm' THEN
+            mCount = mCount + 1
+        END IF
+    END FOR
+    PRINT "U count: ", uCount
+    PRINT "M count: ", mCount
+END
