@@ -44,7 +44,7 @@
 
 ## Q3
 
-//  int[] marks = new int[5];
+    int[] marks = new int[5];
     int i = 0, j = 1;
     marks[i] = 12;
     marks[j] = marks[i] + 19; // 31
@@ -53,11 +53,37 @@
     marks[++j] = marks[i]%5; //961%5 = 2
     marks[2*j] = marks[j-1];
     
-//  marks[0] = 961;
+    marks[0] = 961;
     marks[1] = 31;
     marks[2] = 1;
     marks[3] = 31;
     marks[4] = 31;
+## Q4
+    int count = 0;
+    for (int i = 0; i < sentence.length; i++) {
+    if (sentence[i].equals("the")) {
+        count++;
+    }
+}
+System.out.println("The word the appears " + count + " times");
 
+## Q5
+    for (int i = sentence.length - 1; i >= 0; i--) {
+    for (int j = sentence[i].length() - 1; j >= 0; j--) {
+        System.out.print(sentence[i].charAt(j));
+    }
+    System.out.println();
+}
+
+## Q6
+    int number = (int)(Math.random() * 256);
+    int[] binary = new int[8];
+    for (int i = 7; i >= 0; i--) {
+    binary[i] = number % 2;
+    number = number / 2;
+}
+    for (int i = 0; i < binary.length; i++) {
+    System.out.print(binary[i]);
+}
+System.out.println();
 ```
-'''
