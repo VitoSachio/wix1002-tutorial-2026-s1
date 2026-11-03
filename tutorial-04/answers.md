@@ -24,8 +24,9 @@
     
 }
 }
-
+```
 ## Q2
+```java
 // a. 
     String [] code = {"AAA", "AAB", "AAC", "AAD"}
 // b.
@@ -41,9 +42,9 @@
     int[] score = new int[5];
     score[1] = 78;
     score[i] = 100;
-
+```
 ## Q3
-
+```java
     int[] marks = new int[5];
     int i = 0, j = 1;
     marks[i] = 12;
@@ -58,7 +59,9 @@
     marks[2] = 1;
     marks[3] = 31;
     marks[4] = 31;
+```
 ## Q4
+```java
     int count = 0;
     for (int i = 0; i < sentence.length; i++) {
     if (sentence[i].equals("the")) {
@@ -66,16 +69,18 @@
     }
 }
 System.out.println("The word the appears " + count + " times");
-
+```
 ## Q5
+```java
     for (int i = sentence.length - 1; i >= 0; i--) {
     for (int j = sentence[i].length() - 1; j >= 0; j--) {
         System.out.print(sentence[i].charAt(j));
     }
     System.out.println();
 }
-
+```
 ## Q6
+```java
     int number = (int)(Math.random() * 256);
     int[] binary = new int[8];
     for (int i = 7; i >= 0; i--) {
